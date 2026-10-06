@@ -1,0 +1,40 @@
+{
+  "name": "TopoMap",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "image_uri": {
+      "type": "string",
+      "title": "Map image (private file URI)"
+    },
+    "width": {
+      "type": "number",
+      "title": "Image width (px)"
+    },
+    "height": {
+      "type": "number",
+      "title": "Image height (px)"
+    },
+    "contours": {
+      "type": "string",
+      "title": "Extracted contours (JSON array of polylines)"
+    },
+    "contour_count": {
+      "type": "number",
+      "title": "Number of contour lines",
+      "default": 0
+    },
+    "threshold": {
+      "type": "number",
+      "title": "Detection sensitivity used",
+      "default": 50
+    }
+  },
+  "required": [
+    "name",
+    "image_uri"
+  ]
+}
